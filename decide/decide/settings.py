@@ -151,7 +151,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 BASEURL = 'https://appexamenfernando.herokuapp.com'
-APIS = {}
+APIS = {
+    'authentication': BASEURL,
+    'base': BASEURL,
+    'booth': BASEURL,
+    'census': BASEURL,
+    'mixnet': BASEURL,
+    'postproc': BASEURL,
+    'store': BASEURL,
+    'visualizer': BASEURL,
+    'voting': BASEURL,
+}
 
 # number of bits for the key, all auths should use the same number of bits
 KEYBITS = 256
