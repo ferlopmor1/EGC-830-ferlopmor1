@@ -150,6 +150,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+BASEURL = 'https://appexamenfernando.herokuapp.com'
+APIS = {}
+
 # number of bits for the key, all auths should use the same number of bits
 KEYBITS = 256
 
@@ -160,3 +163,6 @@ except ImportError:
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+
+import django_heroku
+django_heroku.settings(locals())
